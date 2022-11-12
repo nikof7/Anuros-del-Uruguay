@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E9ECF4;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+.main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: 
+        "header header header"
+        "content-1 content-2 content-3"
+        "footer footer footer";
+}
+
+.main>div,
+.main .header,
+.main .content,
+.main .footer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.main .header {
+    background: #12203e;
+    color: #fff;
+    grid-area: header;
+}
+
+.main .footer {
+    background: #12203e;
+    color: #fff;
+    grid-area: footer;
+}
+
+.main .content {
+    grid-area: content;
+}
+
+.main .content-1 {
+    grid-area: content-1;
+}
+.main .content-2 {
+    grid-area: content-2;
+}
+.main .content-3 {
+    grid-area: content-3;
+}
+
+.main>div,
+.main .content-1,
+.main .content-2,
+.main .content-3 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    display: grid;  
+}
+
+.main .card-content {
+    background: #fff;
+    padding-top: 10px;
+}
+
+.main .btn {
+    background-color: rgb(51, 23, 0,0);
+    color: grey;
+    font-size: 48px;
+    border-color: grey;
+    /* border: none; */
+  }

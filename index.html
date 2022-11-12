@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <header class="header">
+        <h2>Anuros del Uruguay</h2>
+        <p>Click en las imagenes para escuchar el canto</p>
+      </header>
+      <div class="content-1">
+        <img
+          src="https://inaturalist-open-data.s3.amazonaws.com/photos/59675594/large.jpg"
+          alt=""
+        />
+        <div class="card-content">
+          <h2 class="card-name">Ranita de Zarzal</h2>
+          <p class="card-specie">Boana pulchella</p>
+        </div>
+      </div>
+      <div class="content-2">
+        <img
+          src="https://inaturalist-open-data.s3.amazonaws.com/photos/59675594/large.jpg"
+          alt=""
+        />
+        <div class="card-content">
+          <h2 class="card-name">Ranita de Zarzal</h2>
+          <p class="card-specie">Boana pulchella</p>
+        </div>
+      </div>
+      <div class="content-3">
+        <audio id="sound1" src="audio.mp3" preload="auto"></audio>
+        <img
+          src="https://inaturalist-open-data.s3.amazonaws.com/photos/59675594/large.jpg"
+          alt=""
+          onclick="document.getElementById('sound1').play();"
+        />
+        <div class="card-content">
+          <h2 class="card-name">Sapito de Darwin</h2>
+          <p class="card-specie">Melanophryniscus montevidensis</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <h3>Footer</h3>
+      </footer>
+    </div>
+  </body>
+</html>
