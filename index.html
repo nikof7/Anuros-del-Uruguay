@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="scripts.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -17,40 +18,45 @@
         <h2>Anuros del Uruguay</h2>
         <p>Click en las imagenes para escuchar el canto</p>
       </header>
+      <div class="family">Familia: Hylidae</div>
       <div class="content-1">
+        <audio id="sound1" src="audio/Pseudis-minuta.m4a" preload="auto"></audio>
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/59675594/large.jpg"
+          src="img/Pminuta.png"
           alt=""
+          onclick="playSound('sound1');"
         />
         <div class="card-content">
-          <h2 class="card-name">Ranita de Zarzal</h2>
-          <p class="card-specie">Boana pulchella</p>
+          <h2 class="card-name">Rana Boyadora</h2>
+          <p class="card-specie">Pseudis minuta</p>
         </div>
       </div>
       <div class="content-2">
+        <audio id="sound2" src="audio/Scinax-granulatus.mp3" preload="auto"></audio>
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/59675594/large.jpg"
+          src="img/Sgranulatus.png"
           alt=""
+          onclick="playSound('sound2');"
+        />
+        <div class="card-content">
+          <h2 class="card-name">Rana roncadora</h2>
+          <p class="card-specie">Scinax granulatus</p>
+        </div>
+      </div>
+      <div class="content-3">
+        <audio id="sound3" src="audio/Boana-pulchella.mp3" preload="auto"></audio>
+        <img
+          src="img/Bpulchella.png"
+          alt=""
+          onclick="playSound('sound3');"
         />
         <div class="card-content">
           <h2 class="card-name">Ranita de Zarzal</h2>
           <p class="card-specie">Boana pulchella</p>
         </div>
       </div>
-      <div class="content-3">
-        <audio id="sound1" src="audio.mp3" preload="auto"></audio>
-        <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/59675594/large.jpg"
-          alt=""
-          onclick="document.getElementById('sound1').play();"
-        />
-        <div class="card-content">
-          <h2 class="card-name">Sapito de Darwin</h2>
-          <p class="card-specie">Melanophryniscus montevidensis</p>
-        </div>
-      </div>
       <footer class="footer">
-        <h3>Footer</h3>
+        <h3>Acá va el footer</h3>
       </footer>
     </div>
   </body>

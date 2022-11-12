@@ -13,7 +13,7 @@ img {
     height: auto;
     max-width: 100%;
     vertical-align: middle;
-  }
+  } 
 
 .main {
     width: 90%;
@@ -26,6 +26,7 @@ img {
 
     grid-template-areas: 
         "header header header"
+        "family family family"
         "content-1 content-2 content-3"
         "footer footer footer";
 }
@@ -43,6 +44,12 @@ img {
     background: #12203e;
     color: #fff;
     grid-area: header;
+}
+
+.main .family{
+    background: #12203e;
+    color: #fff;
+    grid-area: family;
 }
 
 .main .footer {
@@ -87,3 +94,7 @@ img {
     border-color: grey;
     /* border: none; */
   }
+
+.main .content-3:playing {
+    color: rgb(255, 255, 255);
+}
