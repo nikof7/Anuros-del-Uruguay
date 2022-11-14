@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <script type="text/javascript" src="scripts.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="main">
-      <header class="header">
-        <h2>Anuros del Uruguay</h2>
-        <p>Click en las imagenes para escuchar el canto</p>
-      </header>
-      <div class="family">Familia: Hylidae</div>
-      <div class="content-1">
-        <audio id="sound1" src="audio/Pseudis-minuta.m4a" preload="auto"></audio>
-        <img
-          src="img/Pminuta.png"
-          alt=""
-          onclick="playSound('sound1');"
-        />
-        <div class="card-content">
-          <h2 class="card-name">Rana Boyadora</h2>
-          <p class="card-specie">Pseudis minuta</p>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <script type="text/javascript" src="scripts.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <header class="header">
+      <h2>Anuros del Uruguay</h2>
+      <p>Click en las imagenes para escuchar el canto</p>
+    </header>
+    <div class="family">Familia: Hylidae</div>
+    <div class="content-1">
+      <audio controls id="audioval1" hidden>
+        <source src="audio/Pseudis-minuta.m4a" type="audio/mp3">
+      </audio>
+      <img src="img/Pminuta.png" alt="" onclick="Play('audioval1')" />
+      <div class="card-content">
+        <h2 class="card-name">Rana boyadora</h2>
+        <p class="card-specie">Pseudis minuta</p>
       </div>
-      <div class="content-2">
-        <audio id="sound2" src="audio/Scinax-granulatus.mp3" preload="auto"></audio>
-        <img
-          src="img/Sgranulatus.png"
-          alt=""
-          onclick="playSound('sound2');"
-        />
-        <div class="card-content">
-          <h2 class="card-name">Rana roncadora</h2>
-          <p class="card-specie">Scinax granulatus</p>
-        </div>
-      </div>
-      <div class="content-3">
-        <audio id="sound3" src="audio/Boana-pulchella.mp3" preload="auto"></audio>
-        <img
-          src="img/Bpulchella.png"
-          alt=""
-          onclick="playSound('sound3');"
-        />
-        <div class="card-content">
-          <h2 class="card-name">Ranita de Zarzal</h2>
-          <p class="card-specie">Boana pulchella</p>
-        </div>
-      </div>
-      <footer class="footer">
-        <h3>Acá va el footer</h3>
-      </footer>
     </div>
-  </body>
+    <div class="content-2">
+      <audio controls id="audioval1" hidden>
+        <source src="audio/Scinax-granulatus.mp3" type="audio/mp3">
+      </audio>
+      <img src="img/Sgranulatus.png" alt="" onclick="Play('audioval1')" />
+      <div class="card-content">
+        <h2 class="card-name">Rana roncadora</h2>
+        <p class="card-specie">Scinax granulatus</p>
+      </div>
+    </div>
+    <div class="content-3">
+      <audio controls id="audioval2" hidden>
+        <source src="audio/Boana-pulchella.mp3" type="audio/mp3">
+      </audio>
+      <img src="img/Bpulchella.png" alt="" onclick="Play('audioval2')" />
+      <div class="card-content">
+        <h2 class="card-name">Ranita de Zarzal</h2>
+        <p class="card-specie">Boana pulchella</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <h3>Acá va el footer</h3>
+    </footer>
+  </div>
+</body>
+
 </html>

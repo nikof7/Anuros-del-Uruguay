@@ -49,6 +49,8 @@ img {
 .main .family{
     background: #12203e;
     color: #fff;
+    font-weight: bold;
+    font-size: 18px;
     grid-area: family;
 }
 
@@ -97,4 +99,16 @@ img {
 
 .main .content-3:playing {
     color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        grid-template-areas: 
+        "header header header"
+        "family family family"
+        "content-1 content-1 content-1"
+        "content-2 content-2 content-2"
+        "content-3 content-3 content-3"
+        "footer footer footer";
+    }
 }
