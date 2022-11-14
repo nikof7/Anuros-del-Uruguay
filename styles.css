@@ -45,6 +45,9 @@ img {
     color: #fff;
     grid-area: header;
 }
+.main .header p {
+    margin-top: 5px;
+}
 
 .main .family{
     background: #12203e;
@@ -52,6 +55,10 @@ img {
     font-weight: bold;
     font-size: 18px;
     grid-area: family;
+}
+.main .family h4 {
+    font-style: italic;
+    font-weight: lighter;
 }
 
 .main .footer {
@@ -87,6 +94,18 @@ img {
 .main .card-content {
     background: #fff;
     padding-top: 10px;
+}
+.main .card-content h3 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.main .card-content a {
+    font-size: small;
+    margin-top: 10px;
+    text-decoration: underline;
+    float: right;
 }
 
 .main .btn {
